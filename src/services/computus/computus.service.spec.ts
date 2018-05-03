@@ -1,12 +1,22 @@
 import { Computus } from './computus.service';
 
 describe('Computus', () => {
-
-  it('should return Date object', (done) => {
-    const computus = new Computus(2000);
-    console.log(computus);
-    expect(computus.gregorian).toBeObject(
-          'Return should be of type Date'
+  const computus = new Computus(2000);
+  it('should return an object', (done) => {
+    expect(computus).toBeObject(
+      'Returned value should be an object.'
+    );
+    done();
+  });
+  it('should have a property named gregorian', (done) => {
+    expect(computus).toHaveObject('gregorian',
+      'Returned value should have a property named "gregorian"'
+    );
+    done();
+  });
+  it('should have a property named julian', (done) => {
+    expect(computus).toHaveObject('julian',
+      'Returned value should have a property named "julian"'
     );
     done();
   });

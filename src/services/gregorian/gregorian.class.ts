@@ -43,13 +43,14 @@ export class Gregorian extends Calendar {
     s = ((b === 0) && (Calendar.gMod(year, 400) !== 0)) ? 5 : s;
     const solarCycle = Calendar.gMod((year + 8), 28) + 1;                           // Number in Solar Cycle
     s = Calendar.gMod((6 + Math.floor(5 * year / 4) - Math.floor(year / 100) + Math.floor(year / 400)), 7);
-    const dominicalLetter = Calendar.dominicalLetter[s + 7 * Calendar.yearType(year, 'Gregorian')];
+    const dominicalLetter = Calendar.dominicalLetters[s + 7 * Calendar.yearType(year, 'Gregorian')];
+    const martyrologyLetter = !isNaN(ep) ? Calendar.martyrologyLettersGregorian[ep - 1] : null;
 
     this.dominicalLetter = dominicalLetter;
     this.easterFullMoon = [dayEasterFullMoon, monthEasterFullMoon];
     this.easterSunday = [dayEasterSunday, monthEasterSunday];
     this.goldenNumber = goldenNumber;
-    this.martyrologyLetter = dominicalLetter;
+    this.martyrologyLetter = martyrologyLetter;
     this.solarCycle = solarCycle;
   }
 }

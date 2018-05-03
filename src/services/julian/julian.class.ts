@@ -28,7 +28,7 @@ export class Julian extends Calendar {
     const dayEasterSunday = Calendar.gMod(dmj, 31) + 1;              // day Easter Sunday
     const solarCycle = Calendar.gMod((year + 8), 28) + 1;            // Number in Solar Cycle
     const s = Calendar.gMod((4 + Math.floor(5 * year / 4 )), 7);
-    const dominicalLetter = Calendar.dominicalLetter[s + 7 * Calendar.yearType(year, 'Julian')];
+    const dominicalLetter = Calendar.dominicalLetters[s + 7 * Calendar.yearType(year, 'Julian')];
 
     this.dominicalLetter = dominicalLetter;
     this.easterFullMoon = [dayEasterFullMoon, monthEasterFullMoon];
