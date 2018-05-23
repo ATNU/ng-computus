@@ -1,6 +1,6 @@
 {
   "name": "ng-computus",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Computus for calculating the Easter full moon, and therefore the date of Easter Sunday, in both Gregorian and Julian reckoning.",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
