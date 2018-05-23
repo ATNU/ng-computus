@@ -29,12 +29,13 @@ export class Julian extends Calendar {
     const solarCycle = Calendar.gMod((year + 8), 28) + 1;            // Number in Solar Cycle
     const s = Calendar.gMod((4 + Math.floor(5 * year / 4 )), 7);
     const dominicalLetter = Calendar.dominicalLetters[s + 7 * Calendar.yearType(year, 'Julian')];
+    const martyrologyLetter = Calendar.martyrologyLettersJulian[goldenNumber - 1];
 
     this.dominicalLetter = dominicalLetter;
     this.easterFullMoon = [dayEasterFullMoon, monthEasterFullMoon];
     this.easterSunday = [dayEasterSunday, monthEasterSunday];
     this.goldenNumber = goldenNumber;
-    this.martyrologyLetter = dominicalLetter;
+    this.martyrologyLetter = martyrologyLetter;
     this.solarCycle = solarCycle;
   }
 }

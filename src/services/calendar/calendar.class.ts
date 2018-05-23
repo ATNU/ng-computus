@@ -1,3 +1,5 @@
+import {Gregorian} from '../gregorian';
+
 export class Calendar {
 
   public static dominicalLetters = ['G', 'F', 'E', 'D', 'C', 'B', 'A', 'AG', 'GF', 'FE', 'ED', 'DC', 'CB', 'BA'];
@@ -24,7 +26,7 @@ export class Calendar {
    * @param calendarType
    * @returns {number}
    */
-  public static yearType(year, calendarType) {
+  public static yearType(year: number, calendarType: string) {
     let type = Calendar.gMod(year, 4) === 0 ? 1 : 0;
     if (calendarType === 'Gregorian') {
       if (Calendar.gMod(year, 100) === 0) {
@@ -38,6 +40,6 @@ export class Calendar {
   }
 
   constructor() {
-
+    // Empty constructor
   }
 }
