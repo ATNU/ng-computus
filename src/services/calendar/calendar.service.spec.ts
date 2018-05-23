@@ -22,51 +22,49 @@ describe('Calendar gMod', () => {
 
 describe('Calendar yearType', () => {
   it('1500 should not be a Gregorian leap year', (done) => {
-    expect(Calendar.yearType(1500, 'Gregorian')).toBe(0, '2000 should not be a Gregorian leap year'
+    expect(Calendar.yearType(1500, 'Gregorian')).toBe(0, '1500 should not be a Gregorian leap year'
     );
     done();
   });
 
   it('1600 should be a Gregorian leap year', (done) => {
-    expect(Calendar.yearType(1600, 'Gregorian')).toBe(1, '2000 should be a Gregorian leap year'
+    expect(Calendar.yearType(1600, 'Gregorian')).toBe(1, '1600 should be a Gregorian leap year'
     );
     done();
   });
 
   it('2300 should not be a Gregorian leap year', (done) => {
-    expect(Calendar.yearType(2300, 'Gregorian')).toBe(0, '2000 should not be a Gregorian leap year'
+    expect(Calendar.yearType(2300, 'Gregorian')).toBe(0, '2300 should not be a Gregorian leap year'
     );
     done();
   });
 
   it('2400 should be a Gregorian leap year', (done) => {
-    expect(Calendar.yearType(2400, 'Gregorian')).toBe(1, '2000 should be a Gregorian leap year'
+    expect(Calendar.yearType(2400, 'Gregorian')).toBe(1, '2400 should be a Gregorian leap year'
     );
     done();
   });
-});
 
-describe('Calendar yearType', () => {
-  it('1500 should not be a Julian leap year', (done) => {
-    expect(Calendar.yearType(1500, 'Julian')).toBe(0, '2000 should not be a Julian leap year'
+  it('1510 should not be a Julian leap year', (done) => {
+    expect(Calendar.yearType(1510, 'Julian')).toBe(0, '1510 should not be a Julian leap year'
     );
     done();
   });
 
   it('1600 should be a Julian leap year', (done) => {
-    expect(Calendar.yearType(1600, 'Julian')).toBe(1, '2000 should be a Julian leap year'
+    expect(Calendar.yearType(1600, 'Julian')).toBe(1, '1600 should be a Julian leap year'
     );
     done();
   });
 
-  it('2300 should not be a Julian leap year', (done) => {
-    expect(Calendar.yearType(2300, 'Julian')).toBe(0, '2000 should not be a Julian leap year'
+  it('2310 should not be a Julian leap year', (done) => {
+    expect(Calendar.yearType(2310, 'Julian')).toBe(0, '2310 should not be a Julian leap year'
     );
     done();
   });
 
   it('2400 should be a Julian leap year', (done) => {
-    expect(Calendar.yearType(2400, 'Julian')).toBe(1, '2000 should be a Julian leap year'
+    expect(Calendar.yearType(2400, 'Julian')).toBe(1, '2400 should be a Julian leap year'
     );
     done();
   });
