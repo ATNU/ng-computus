@@ -1,8 +1,7 @@
 # ngComputus
 
 [![Build Status](https://travis-ci.org/trekhleb/angular-library-seed.svg?branch=master)](https://travis-ci.org/trekhleb/angular-library-seed)
-[![codecov](https://codecov.io/gh/trekhleb/angular-library-seed/branch/master/graph/badge.svg)](https://codecov.io/gh/trekhleb/angular-library-seed)
-[![npm version](https://badge.fury.io/js/angular-library-seed.svg)](https://badge.fury.io/js/angular-library-seed)
+[![npm version](https://badge.fury.io/js/ng-computus.svg)](https://badge.fury.io/js/ng-computus)
 
 This library calculates the date of the Easter full moon in any given year. The return object provides both Gregorian and Julian reckonings. 
 The Gregorian calendar came into use in 1582 but the algorithm can still be used in to calculate what Easter _would_ have been in pre-1582 years.
