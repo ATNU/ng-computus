@@ -29,9 +29,9 @@ Both the `gregorian` and `julian` objects have identical structures with the fol
 #### dominicalLetter
 [Dominical letters](https://en.wikipedia.org/wiki/Dominical_letter) or Sunday letters are a method used to determine the day of the week for particular dates. When using this method, each year is assigned a letter (or pair of letters for leap years) depending on which day of the week the year starts on.
 #### easterFullMoon
-The calendar reckoning of the date of the Easter full moon. To maximise portability with different Datetime libraries this returned as an array representation in the form `[day, month, year]`
+The calendar reckoning of the date of the Easter full moon. To maximise portability with different Datetime libraries this is returned as an array representation in the form `[day, month, year]`
 #### easterSunday
-The calendar reckoning of the date of Easter Sunday. To maximise portability with different Datetime libraries this returned as an array representation in the form `[day, month, year]`
+The calendar reckoning of the date of Easter Sunday. To maximise portability with different Datetime libraries this is returned as an array representation in the form `[day, month, year]`
 #### goldenNumber
 The number assigned to each year in sequence to indicate the year's position in a 19-year [Metonic cycle](https://en.wikipedia.org/wiki/Metonic_cycle).
 #### martyrologyLetter

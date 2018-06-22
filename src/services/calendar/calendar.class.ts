@@ -1,5 +1,3 @@
-import {Gregorian} from '../gregorian';
-
 export class Calendar {
 
   public static dominicalLetters = ['G', 'F', 'E', 'D', 'C', 'B', 'A', 'AG', 'GF', 'FE', 'ED', 'DC', 'CB', 'BA'];
