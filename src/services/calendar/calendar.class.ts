@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
 export class Calendar {
 
   public static dominicalLetters = ['G', 'F', 'E', 'D', 'C', 'B', 'A', 'AG', 'GF', 'FE', 'ED', 'DC', 'CB', 'BA'];

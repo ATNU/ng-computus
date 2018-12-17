@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Calendar } from './../calendar';
 
-@Injectable()
 export class Gregorian extends Calendar {
 
   public dominicalLetter: string;
