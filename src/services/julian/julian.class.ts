@@ -1,5 +1,7 @@
-import {Calendar} from './../calendar';
+import { Injectable } from '@angular/core';
+import { Calendar } from './../calendar';
 
+@Injectable()
 export class Julian extends Calendar {
 
   public dominicalLetter: string;
