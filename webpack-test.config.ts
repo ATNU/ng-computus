@@ -61,9 +61,8 @@ export default {
     }),
 
     new webpack.ContextReplacementPlugin(
-      /angular(\\|\/)core(\\|\/)@angular/,
-      path.join(__dirname, 'src')
-    ),
+      /\@angular(\\|\/)core(\\|\/)esm5/,
+      path.join(__dirname, 'src')),
 
     new webpack.NoEmitOnErrorsPlugin()
   ]

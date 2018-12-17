@@ -23,7 +23,13 @@
       "node",
       "webpack",
       "webpack-env"
-    ]
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@computus/*": ["services/computus/*"],
+      "@gregorian/*": ["services/gregorian/*"],
+      "@julian/*": ["services/julian/*"]
+    }
   },
   "include": [
     "src/**/*.ts"

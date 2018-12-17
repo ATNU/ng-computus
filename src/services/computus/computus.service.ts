@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Gregorian } from '../gregorian';
-import { Julian } from '../julian';
+import { Gregorian } from './../gregorian';
+import { Julian } from './../julian';
 
 /**
  * Computus class.
  */
-@Injectable()
 export class Computus {
 
   public gregorian: Gregorian;
