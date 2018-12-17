@@ -5,6 +5,7 @@ import { Julian } from './../julian';
 /**
  * Computus class.
  */
+@Injectable()
 export class Computus {
 
   public gregorian: Gregorian;
